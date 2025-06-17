@@ -1,5 +1,5 @@
 const express  = require('express');
-const session = require('express-session');
+// const session = require('express-session');
 const cron = require('node-cron');
 const nodemailer =require('nodemailer');
 const app = express();
@@ -23,16 +23,16 @@ app.use(cors({
 
 app.use(express.json());
 // Configuração do middleware de sessão
-app.use(session({
-    secret: process.env.SECRET_SESSION,
-    resave: false,
-    saveUninitialized: false,
-    cookie:{
-        secure: false,
-        httpOnly: true,
-        maxAge: 1000 * 60 * 60 * 24 // 1 dia em milissegundos
-    }
-}));
+// app.use(session({
+//     secret: process.env.SECRET_SESSION,
+//     resave: false,
+//     saveUninitialized: false,
+//     cookie:{
+//         secure: false,
+//         httpOnly: true,
+//         maxAge: 1000 * 60 * 60 * 24 // 1 dia em milissegundos
+//     }
+// }));
 // Middleware para verificar o token JWT
 app.use('/api/auth', authRouter);
 app.use('/api', protectedRoutes);
