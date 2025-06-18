@@ -17,8 +17,10 @@ app.use(borderParser.urlencoded({extended: true}));
 app.use(borderParser.json());
 // Configuração do CORS
 app.use(cors({
-    origin: 'http://localhost:3000',
-    credentials: true
+    origin: 'https://htecs.vercel.app',
+    credentials: true,
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    optionsSuccessStatus: 204 // For preflight requests
 }));
 
 app.use(express.json());
