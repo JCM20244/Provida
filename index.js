@@ -255,7 +255,7 @@ let transporter = nodemailer.createTransport({
                         console.log('Artigo actualizado com sucesso!');
                     }
                 });
-                db.query('INSERT INTO ArtigoReported(artigo,lote,dataRep,numRep) VALUES (?,?,Now(),?)',[item.artigo, item.lote, item.dias], function(errs,resulti){
+                db.query('INSERT INTO ArtigoExpirado(artigo,dataExp) VALUES (?,Now())',[item.artigo], function(errs,resulti){
                     if(!err){
                         console.log('Artigo Reportado com sucesso!');
                     }
