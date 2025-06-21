@@ -237,7 +237,7 @@ let transporter = nodemailer.createTransport({
             message +=  '</tbody> </table>'+'<h4>Nota: Recomendamos remover estes artigos! </h4>'+'<div>https://controlereagente-ce0ef6a6905c.herokuapp.com/</div>';
             let mailOptions = {
                 from: 'laboratorio@provida.co.mz',  //it@provida.co.mz
-                to: 'jcumbe.info@gmail.com, laboratorio@provida.co.mz, admin@provida.co.mz',
+                to: 'jcumbe.info@gmail.com', //'laboratorio@provida.co.mz, admin@provida.co.mz',
                 subject: 'Software de Controle de Validade de Artigos do Laboratorio (HTRECS)',
                 text: 'Email From HTRECS',
                 html:message  
@@ -250,16 +250,17 @@ let transporter = nodemailer.createTransport({
             });
             //actualizar o estado do artigo e inserir na tabela ArtigosReported
             result.map(item=>{
+                 db.query('INSERT INTO ArtigoExpirado(artigo,dataExp) VALUES (?,Now())',[item.artigo], function(errs,resulti){
+                    if(!err){
+                        console.log('Artigo Reportado com sucesso!');
+                    }
+                });
                 db.query('Update Artigo SET estado =?  where codigo=?',['EXPIRADO',item.artigo],function(errs,results){
                     if(!errs){
                         console.log('Artigo actualizado com sucesso!');
                     }
                 });
-                db.query('INSERT INTO ArtigoExpirado(artigo,dataExp) VALUES (?,Now())',[item.artigo], function(errs,resulti){
-                    if(!err){
-                        console.log('Artigo Reportado com sucesso!');
-                    }
-                });
+               
             });
         }
     });
