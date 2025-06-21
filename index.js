@@ -528,10 +528,11 @@ app.delete('/delete/:id',(req,res)=>{
         }
     });
 });
+app.get('/',(req,res)=>{
+    res.json({message: 'Hello Server'});
+});
 // Listening to the server
 app.listen(port, ()=>{
     console.log(`The server ${port}run...`);
 });
-// app.get('/',(req,res)=>{
-//     res.json({message: 'Hello Server'});
-// });
+
