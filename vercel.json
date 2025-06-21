@@ -11,5 +11,12 @@
       "src": "/(.*)",
       "dest": "index.js" 
     }
+  ],
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "crons": [
+    {
+      "path": "/api/hello",
+      "schedule": "0 5 * * *"
+    }
   ]
 }
