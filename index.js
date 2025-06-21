@@ -24,17 +24,7 @@ app.use(cors({
 }));
 
 app.use(express.json());
-// Configuração do middleware de sessão
-// app.use(session({
-//     secret: process.env.SECRET_SESSION,
-//     resave: false,
-//     saveUninitialized: false,
-//     cookie:{
-//         secure: false,
-//         httpOnly: true,
-//         maxAge: 1000 * 60 * 60 * 24 // 1 dia em milissegundos
-//     }
-// }));
+
 // Middleware para verificar o token JWT
 app.use('/api/auth', authRouter);
 app.use('/api', protectedRoutes);
@@ -76,7 +66,7 @@ let transporter = nodemailer.createTransport({
                 '</tr>'
                 )
             );
-            message +=  '</tbody> </table>'+'<h4>Nota: Recomendamos o uso destes artigos antes da data de expiracao! </h4>'+'<div>https://controlereagente-ce0ef6a6905c.herokuapp.com/</div>';
+            message +=  '</tbody> </table>'+'<h4>Nota: Recomendamos o uso destes artigos antes da data de expiracao! </h4>'+'<div>https://htecs.vercel.app/</div>';
             let mailOptions = {
                 from: 'laboratorio@provida.co.mz',  //it@provida.co.mz
                 to: 'jcumbe.info@gmail.com',//'it@provida.co.mz, laboratorio@provida.co.mz, admin@provida.co.mz',
@@ -127,7 +117,7 @@ let transporter = nodemailer.createTransport({
                 '</tr>'
                 )
             );
-            message +=  '</tbody> </table>'+'<h4>Nota: Recomendamos o uso destes artigos antes da data de expiracao! </h4>'+'<div>https://controlereagente-ce0ef6a6905c.herokuapp.com/</div>';
+            message +=  '</tbody> </table>'+'<h4>Nota: Recomendamos o uso destes artigos antes da data de expiracao! </h4>'+'<div>https://htecs.vercel.app/</div>';
             let mailOptions = {
                 from: 'laboratorio@provida.co.mz',  //it@provida.co.mz
                 to: 'jcumbe.info@gmail.com',//'it@provida.co.mz, laboratorio@provida.co.mz, admin@provida.co.mz',
@@ -178,7 +168,7 @@ let transporter = nodemailer.createTransport({
                 '</tr>'
                 )
             );
-            message +=  '</tbody> </table>'+'<h4>Nota: Recomendamos o uso destes artigos antes da data de expiracao! </h4>'+'<div>https://controlereagente-ce0ef6a6905c.herokuapp.com/</div>';
+            message +=  '</tbody> </table>'+'<h4>Nota: Recomendamos o uso destes artigos antes da data de expiracao! </h4>'+'<div>https://htecs.vercel.app/</div>';
             let mailOptions = {
                 from: 'laboratorio@provida.co.mz',  //it@provida.co.mz
                 to: 'jcumbe.info@gmail.com',//'it@provida.co.mz, laboratorio@provida.co.mz, admin@provida.co.mz',
@@ -234,7 +224,7 @@ let transporter = nodemailer.createTransport({
                 '</tr>'
                 )
             );
-            message +=  '</tbody> </table>'+'<h4>Nota: Recomendamos remover estes artigos! </h4>'+'<div>https://controlereagente-ce0ef6a6905c.herokuapp.com/</div>';
+            message +=  '</tbody> </table>'+'<h4>Nota: Recomendamos remover estes artigos! </h4>'+'<div>https://htecs.vercel.app/</div>';
             let mailOptions = {
                 from: 'laboratorio@provida.co.mz',  //it@provida.co.mz
                 to: 'jcumbe.info@gmail.com', //'laboratorio@provida.co.mz, admin@provida.co.mz',
