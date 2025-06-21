@@ -70,7 +70,7 @@ let transporter = nodemailer.createTransport({
             let mailOptions = {
                 from: 'laboratorio@provida.co.mz',  //it@provida.co.mz
                 to: 'jcumbe.info@gmail.com',//'it@provida.co.mz, laboratorio@provida.co.mz, admin@provida.co.mz',
-                subject: 'Software de Controle de Validade de Artigos do Laboratorio (HTRECS)',
+                subject: 'Software de Controle de Validade de Artigos do Laboratorio',
                 text: 'Email From HTRECS',
                 html:message  
             };
@@ -121,7 +121,7 @@ let transporter = nodemailer.createTransport({
             let mailOptions = {
                 from: 'laboratorio@provida.co.mz',  //it@provida.co.mz
                 to: 'jcumbe.info@gmail.com',//'it@provida.co.mz, laboratorio@provida.co.mz, admin@provida.co.mz',
-                subject: 'Software de Controle de Validade de Artigos do Laboratorio (HTRECS)',
+                subject: 'Software de Controle de Validade de Artigos do Laboratorio',
                 text: 'Email From HTRECS',
                 html:message  
             };
@@ -172,7 +172,7 @@ let transporter = nodemailer.createTransport({
             let mailOptions = {
                 from: 'laboratorio@provida.co.mz',  //it@provida.co.mz
                 to: 'jcumbe.info@gmail.com',//'it@provida.co.mz, laboratorio@provida.co.mz, admin@provida.co.mz',
-                subject: 'Software de Controle de Validade de Artigos do Laboratorio (HTRECS)',
+                subject: 'Software de Controle de Validade de Artigos do Laboratorio',
                 text: 'Email From HTRECS',
                 html:message
             };
@@ -228,7 +228,7 @@ let transporter = nodemailer.createTransport({
             let mailOptions = {
                 from: 'laboratorio@provida.co.mz',  //it@provida.co.mz
                 to: 'jcumbe.info@gmail.com', //'laboratorio@provida.co.mz, admin@provida.co.mz',
-                subject: 'Software de Controle de Validade de Artigos do Laboratorio (HTRECS)',
+                subject: 'Software de Controle de Validade de Artigos do Laboratorio',
                 text: 'Email From HTRECS',
                 html:message  
             };
