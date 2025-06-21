@@ -144,7 +144,7 @@ let transporter = nodemailer.createTransport({
             //actualizar o estado do artigo e inserir na tabela ArtigosReported
             result.map(item=>{
                 db.query('INSERT INTO ArtigoReported(artigo,lote,dataRep,numRep) VALUES (?,?,Now(),?)',[item.artigo, item.lote,item.dias], function(errs,resulti){
-                    if(!err){
+                    if(!errs){
                         console.log('Artigo Reportado com sucesso!');
                     }
                 });
@@ -200,7 +200,7 @@ let transporter = nodemailer.createTransport({
                     }
                 });
                 db.query('INSERT INTO ArtigoAgendado (artigo,lote,dataExp,dias,meses) VALUES (?,?,?,?,?)',[item.artigo,item.lote,item.expData,item.dias, item.mesdif], function(errs,results){
-                    if(!err){
+                    if(!errs){
                         console.log('Artigo Agendado com sucesso!');
                     }
                 });
@@ -250,8 +250,8 @@ let transporter = nodemailer.createTransport({
             });
             //actualizar o estado do artigo e inserir na tabela ArtigosReported
             result.map(item=>{
-                 db.query('INSERT INTO ArtigoExpirado(artigo,dataExp) VALUES (?,Now())',[item.artigo], function(errs,resulti){
-                    if(!err){
+                 db.query('INSERT INTO ArtigoExpirado(artigo,dataExp) VALUES (?,Now())',[item.artigo], function(erros,resulti){
+                    if(!erros){
                         console.log('Artigo Reportado com sucesso!');
                     }
                 });
