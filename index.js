@@ -519,7 +519,7 @@ app.delete('/delete/:id',(req,res)=>{
     });
 });
 app.get('/',(req,res)=>{
-    res.json({message: 'Hello Server'});
+    res.json({message: 'Hello Servers'});
 });
 // Listening to the server
 app.listen(port, ()=>{
