@@ -69,9 +69,9 @@ let transporter = nodemailer.createTransport({
             message +=  '</tbody> </table>'+'<h4>Nota: Recomendamos o uso destes artigos antes da data de expiracao! </h4>'+'<div>https://htecs.vercel.app/</div>';
             let mailOptions = {
                 from: 'laboratorio@provida.co.mz',  //it@provida.co.mz
-                to: 'jcumbe.info@gmail.com',//'it@provida.co.mz, laboratorio@provida.co.mz, admin@provida.co.mz',
+                to: 'it@provida.co.mz, laboratorio@provida.co.mz, admin@provida.co.mz',
                 subject: 'Software de Controle de Validade de Artigos do Laboratorio',
-                text: 'Email From HTRECS',
+                text: 'Email From HTECS',
                 html:message  
             };
             // Delivering mail with sendMail method
@@ -120,9 +120,9 @@ let transporter = nodemailer.createTransport({
             message +=  '</tbody> </table>'+'<h4>Nota: Recomendamos o uso destes artigos antes da data de expiracao! </h4>'+'<div>https://htecs.vercel.app/</div>';
             let mailOptions = {
                 from: 'laboratorio@provida.co.mz',  //it@provida.co.mz
-                to: 'jcumbe.info@gmail.com',//'it@provida.co.mz, laboratorio@provida.co.mz, admin@provida.co.mz',
+                to: 'it@provida.co.mz,laboratorio@provida.co.mz, admin@provida.co.mz',
                 subject: 'Software de Controle de Validade de Artigos do Laboratorio',
-                text: 'Email From HTRECS',
+                text: 'Email From HTECS',
                 html:message  
             };
             // Delivering mail with sendMail method
@@ -171,9 +171,9 @@ let transporter = nodemailer.createTransport({
             message +=  '</tbody> </table>'+'<h4>Nota: Recomendamos o uso destes artigos antes da data de expiracao! </h4>'+'<div>https://htecs.vercel.app/</div>';
             let mailOptions = {
                 from: 'laboratorio@provida.co.mz',  //it@provida.co.mz
-                to: 'jcumbe.info@gmail.com',//'it@provida.co.mz, laboratorio@provida.co.mz, admin@provida.co.mz',
+                to: 'it@provida.co.mz, laboratorio@provida.co.mz, admin@provida.co.mz',
                 subject: 'Software de Controle de Validade de Artigos do Laboratorio',
-                text: 'Email From HTRECS',
+                text: 'Email From HTECS',
                 html:message
             };
             // Delivering mail with sendMail method
@@ -227,9 +227,9 @@ let transporter = nodemailer.createTransport({
             message +=  '</tbody> </table>'+'<h4>Nota: Recomendamos remover estes artigos! </h4>'+'<div>https://htecs.vercel.app/</div>';
             let mailOptions = {
                 from: 'laboratorio@provida.co.mz',  //it@provida.co.mz
-                to: 'jcumbe.info@gmail.com', //'laboratorio@provida.co.mz, admin@provida.co.mz',
+                to: 'it@provida.co.mz, laboratorio@provida.co.mz, admin@provida.co.mz',
                 subject: 'Software de Controle de Validade de Artigos do Laboratorio',
-                text: 'Email From HTRECS',
+                text: 'Email From HTECS',
                 html:message  
             };
             // Delivering mail with sendMail method
