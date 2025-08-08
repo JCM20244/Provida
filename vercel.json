@@ -12,10 +12,4 @@
       "dest": "index.js" 
     }
   ],
-   "crons": [
-    {
-      "path": "/api/cron-job.js",
-      "schedule": "* 5 * * *"
-    }
-  ]
 }
