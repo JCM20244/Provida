@@ -17,7 +17,7 @@ app.use(borderParser.urlencoded({extended: true}));
 app.use(borderParser.json());
 // Configuração do CORS
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: 'https://htecs.vercel.app/',
     credentials: true
 }));
 
